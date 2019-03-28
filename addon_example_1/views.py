@@ -8,5 +8,5 @@ def index(request):
     Hello, World!<br/>
 
     buildpack-notes:{}
-    """.format(os.environ['NOTES'])
+    """.format(os.environ['NOTES']+os.environ['ASD'])
     )
