@@ -4,9 +4,14 @@ from django.http import HttpResponse
 import os
 
 def index(request):
-    return HttpResponse("""
+
+    env = ""
+    for k in os.environ.keys():
+        env += f"{k}={os.environ[k]}\n<br/>"
+
+    return HttpResponse(f"""
     Hello, World!<br/>
 
-    buildpack-notes:{}
-    """.format(os.environ['NOTES']+os.environ['ASD'])
+    env:{env}
+    """
     )
