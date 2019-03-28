@@ -123,6 +123,7 @@ setup(
     license="BSD",
     packages=find_packages(),
     package_dir={PACKAGE: PACKAGE},
+    package_data={PACKAGE: ['addon.yml']},
     description="Flavor Addons Example",
     install_requires=Setup.requirements("requirements.txt"),
     long_description=Setup.longdesc(),
