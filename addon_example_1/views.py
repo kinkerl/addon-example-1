@@ -9,9 +9,4 @@ def index(request):
     for k in os.environ.keys():
         env += f"{k}={os.environ[k]}\n<br/>"
 
-    return HttpResponse(f"""
-    Hello, World!<br/>
-
-    env:<br/>\n{env}
-    """
-    )
+    return HttpResponse(env)
