@@ -10,4 +10,9 @@ form:
     type: "scalar/string"
     default: "en,de"
     helptext: "WARNING: this field is auto-written. Please do not change it here."
+  database:
+    label: database
+    required: True
+    type: "service/database"
+    helptext: "WARNING: this field is auto-written. Please do not change it here."
  
