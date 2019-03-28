@@ -6,7 +6,7 @@ import os
 def index(request):
 
     env = ""
-    for k in os.environ.keys().sort():
+    for k in os.environ.keys():
         env += f"{k}={os.environ[k]}\n<br/>"
 
     return HttpResponse(f"""
