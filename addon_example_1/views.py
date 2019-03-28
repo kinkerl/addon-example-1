@@ -12,6 +12,6 @@ def index(request):
     return HttpResponse(f"""
     Hello, World!<br/>
 
-    env:{env}
+    env:<br/>\n{env}
     """
     )
