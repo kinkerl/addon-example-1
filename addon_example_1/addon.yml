@@ -1,0 +1,13 @@
+name: addon_example_1
+version: 0.1
+flavor:
+  version: 0.1
+  
+form: 
+  somevalue:
+    label: somevalue
+    required: True
+    type: "scalar/string"
+    default: "en,de"
+    helptext: "WARNING: this field is auto-written. Please do not change it here."
+ 
